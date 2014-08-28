@@ -1,0 +1,23 @@
+{
+  "name": "stream-utils",
+  "version": "0.1.0",
+  "description": "utilities for node.js stream",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:apostopher/stream-utils.git"
+  },
+  "keywords": [
+    "streams",
+    "node.js"
+  ],
+  "author": "Rahul Devaskar <apostopher@gmail.com> (http://apostopher.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/apostopher/stream-utils/issues"
+  },
+  "homepage": "https://github.com/apostopher/stream-utils"
+}
