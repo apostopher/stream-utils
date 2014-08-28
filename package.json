@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/apostopher/stream-utils/issues"
   },
-  "homepage": "https://github.com/apostopher/stream-utils"
+  "homepage": "https://github.com/apostopher/stream-utils",
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "mocha": "^1.21.4"
+  }
 }
