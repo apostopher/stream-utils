@@ -43,4 +43,22 @@ utils.dumper = (container, onEnd) ->
   finish = -> onEnd container
   writeStream task, finish
 
+utils.save = (task, onEnd) -> writeStream task, onEnd
+
+utils.cartesian = (arrays...) ->
+  result = []
+  max = arrays.length - 1
+  iter = (arr, index) ->
+    for item in arrays[index]
+      a = arr.slice 0
+      a.push item
+      if index is max
+        result.push a
+      else
+        iter a, index + 1
+
+  iter [], 0
+  utils.from result
+
+
 module.exports = utils
